@@ -1,0 +1,639 @@
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------   Stylesheet                       ------------------------------------*/
+/*--------------------   adamprinz.com                    ------------------------------------*/
+/*--------------------   Copyright ©2017 Adam Prinz       ------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Tauri');
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*---------------------------------   Global Styles   ----------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+
+.accessibility {
+    display: none;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Tauri', 'Arial', sans-serif;
+    letter-spacing: .1em;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s ease;
+}
+
+h1 {
+    position: absolute;
+    left: 10%;
+    top: -6px;
+    display: none;
+}
+
+h1 a {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 80%;
+    font-weight: 100;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+h2 {
+    font-size: 10vmin;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin: 0 0 0 10%;
+}
+
+.flicker {
+  animation: flicker 5s infinite alternate;
+  -webkit-animation: flicker 5s infinite alternate;
+  -moz-animation: flicker 5s infinite alternate;
+  -o-animation: flicker 5s infinite alternate;
+}
+
+.flicker2 {
+  animation: flicker2 5s infinite alternate;
+  -webkit-animation: flicker2 5s infinite alternate;
+  -moz-animation: flicker2 5s infinite alternate;
+  -o-animation: flicker2 5s infinite alternate;
+}
+
+@keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@-webkit-keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@-moz-keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@-o-keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+@-webkit-keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+@-moz-keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+@-o-keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+#menu-btn {
+    display: none;
+}
+
+nav ul {
+    position: absolute;
+    top: 9px;
+    right: 5%;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1vw;
+    padding: 10px 1vw;
+    text-align: center;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+nav li:hover {
+    border-bottom: solid 2px #ff4dab;
+    transition: 0.5s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+nav a:hover {
+    color: #ff4dab;
+}
+
+p {
+    width: 80%;
+    margin: 50px auto;
+    line-height: 2;
+    font-size: 2vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 5%;
+    border: solid 1px #fff;
+}
+
+.button:hover {
+    background: rgba(241, 25, 54, 0.6);
+    transition: 0.5s ease;
+}
+
+main {
+    line-height: 0;
+}
+
+footer p {
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    font-size: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background: #000;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-----------------------------------   Introduction   ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+#intro {
+    height: 120vh;
+    background-image: url(Images/AdamPrinzSelfie.png);
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+#intro h2 {
+    width: auto;
+    position: fixed;
+    top: 35vh;
+    right: 9%;
+    margin: auto;
+    color: #ff4dab;
+    text-shadow: 0 0 10px #ff66b7, 0 0 25px #662749, 0 0 45px #ff80c3, 0 0 85px #f33d9d;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 230%;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    z-index: 1;
+}
+
+#intro h2 .flicker {
+    animation: flicker 5s infinite alternate;
+    -webkit-animation: flicker 5s infinite alternate;
+    -moz-animation: flicker 5s infinite alternate;
+    -o-animation: flicker 5s infinite alternate;
+}
+
+#intro h2 .flicker2 {
+    animation: flicker2 5s infinite alternate;
+    -webkit-animation: flicker2 5s infinite alternate;
+    -moz-animation: flicker2 5s infinite alternate;
+    -o-animation: flicker2 5s infinite alternate;
+}
+
+#intro h3 {
+    width: auto;
+    position: fixed;
+    top: 42vh;
+    right: 10%;
+    margin: auto;
+    color: #ffffff;
+    font-size: 80%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+#intro p {
+    width: auto;
+    margin: 0;
+    position: absolute;
+    left: 5%;
+    bottom: 10px;
+    color: #fff;
+    font-size: 0.5em;
+    font-weight: 100;
+}
+
+#intro a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*----------------------------------------   Work  -------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+
+#work {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+#treeline {
+    width: 100%;
+    height: 100px;
+    background-image: url(Images/treeline.png);
+    background-size: auto 100%;
+    position: absolute;
+    top: -90px;
+}
+
+#work h2 {
+    padding: 100px 0 100px 0;
+}
+
+#work span {
+    font-size: 150%;
+    font-weight: 100;
+    color: #000;
+    vertical-align: middle;
+}
+
+#gallery section {
+    line-height: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 50vh;
+}
+
+#gallery img {
+    width: 100%;
+    margin-top: -20vw;
+    filter: grayscale();
+    opacity: .5;
+}
+
+#gallery img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*---------------------------------------   About  -------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#about {
+    min-height: 130vh;
+    background-image: url(Images/AdamPrinzSelfie2.png);
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+#about h2 {
+    padding-top: 100px;
+    color: #fff;
+}
+
+#about span {
+    font-size: 150%;
+    font-weight: 100;
+    color: #fff;
+    vertical-align: middle;
+}
+
+#about p {
+    width: 50%;
+    color: #fff;
+    text-align: left;
+    margin-left: 11%;
+}
+
+#about p:nth-child(2) {
+    margin-top: 150px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-------------------------------------   Contact  -------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#contact {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+#contact h2 {
+    padding-top: 100px;
+}
+
+#contact span {
+    font-size: 150%;
+    font-weight: 100;
+    color: #000;
+    vertical-align: middle;
+}
+
+#contact p {
+    width: 50%;
+    color: #000;
+    text-align: left;
+    margin-left: 11%;
+}
+
+#contact p:last-child {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+#contact p:last-child:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 100px 0 25px 0;
+    margin-left: 11%;
+}
+
+#contact li {
+    width: 15%;
+    max-width: 100px;
+    padding-right: 10vw;
+    display: inline-block;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-------------------------------   Process Template   ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#process header {
+    background-color: #000;
+}
+
+#process main {
+    margin-top: 75px;
+}
+
+#process h1 {
+    display: block;
+}
+
+#process img {
+    width: 100%;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*----------------------------------   Media Queries   ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    header {
+        background: transparent;
+    }
+
+    h2 {
+        margin: 0 0 0 6%;
+    }
+    
+    #menu-btn {
+        width: 75px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 18px;
+        left: 75%;
+    }
+
+    #menu-btn span {
+        transition: 1s;
+    }
+
+    #menu-btn.open span:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(145deg);
+    -moz-transform: translateY(8px) rotate(145deg);
+    -o-transform: translateY(8px) rotate(145deg);
+    transform: translateY(8.9px) rotate(145deg);
+    transition: 1s;
+    }
+
+    #menu-btn.open span:nth-child(2) {
+    opacity: 0;
+    transition: 0.2s;
+    }
+
+    #menu-btn.open span:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(45deg);
+    -moz-transform: translateY(-8px) rotate(45deg);
+    -o-transform: translateY(-8px) rotate(45deg);
+    transform: translateY(-8px) rotate(215deg);
+    transition: 1s;
+    }
+
+    .hamburgerMenu {
+        width: 50%;
+        height: 1px;
+        background: #fff;
+        display: block;
+        margin: 8px 0 9px 25px;
+    }
+
+    nav ul {
+        width: 50%;
+        list-style-type: none;
+        margin: 65px 0;
+        display: none;
+    }
+
+    nav li {
+        font-size: 80%;
+        margin: 10px;
+        padding: 10px 100vw 10px 10px;
+        background: #000;
+        text-align: center;
+        transform: translateX(630px);
+        transition: 1.2s ease;
+    }
+
+    nav a {
+        width: 20vw;
+        display: block;
+        padding: 2vw;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-item {
+        transform: translateX(0);
+    }
+
+
+    /*--------------------------------------------------------------------------------------------*/
+    /*---------------------------------  Mobile Work ---------------------------------------------*/
+    /*--------------------------------------------------------------------------------------------*/
+
+
+
+    #gallery img {
+        width: 100%;
+        margin-top: 0;
+        filter: none;
+        opacity: 1;
+    }
+
+
+    /*--------------------------------------------------------------------------------------------*/
+    /*---------------------------------  Mobile About  -------------------------------------------*/
+    /*--------------------------------------------------------------------------------------------*/
+    
+
+
+    #about {
+        height: 160vh;
+    }
+
+    #about p {
+        width: 85%;
+        margin-left: auto;
+    }
+
+
+
+    /*--------------------------------------------------------------------------------------------*/
+    /*---------------------------------  Mobile Contact  -----------------------------------------*/
+    /*--------------------------------------------------------------------------------------------*/
+    
+
+
+    #contact p {
+        width: 85%;
+        margin-left: auto;
+    }
+
+    #contact p:last-child {
+        font-size: 3vw;
+    }
+
+    #contact ul {
+        margin-left: 6%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+    /*--------------------------------------------------------------------------------------------*/
+    /*---------------------------------  Mobile Work ---------------------------------------------*/
+    /*--------------------------------------------------------------------------------------------*/
+
+
+
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
